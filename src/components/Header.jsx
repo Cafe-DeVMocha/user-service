@@ -1,4 +1,8 @@
+import { useUser } from "../context/userContext"
+
 export default function Header() {
+
+    const {user} = useUser();
     return (
 
         <div className=" bg-gray-900 text-gray-300">
@@ -16,8 +20,6 @@ export default function Header() {
                     <a href="#Contact Us">Contact Us</a>
                 </nav>
                     
-               
-
                 <div className="hidden md:flex gap-4" >
                     < a href="#">LinkedIn</a>
                     < a href="#">LinkedIn</a>
@@ -26,7 +28,7 @@ export default function Header() {
                 </div>
 
                 <div className="sm:px-10 md:block">
-                    profile
+                   <p>{user.name}</p>
                 </div>
             </div>
 
