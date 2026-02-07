@@ -15,9 +15,9 @@ export default function Header() {
     const { user } = useUser();
     return (
 
-        <div className=" bg-gray-900 text-gray-300">
+        <div className=" bg-blue-950 text-gray-300">
 
-            <div className="flex flex-col gap-3  lg:flex-row  lg:items-center lg:justify-between  lg:px-12 items-center">
+            <div className="flex flex-col gap-3 bg-gray-900 lg:flex-row  lg:items-center lg:justify-between  lg:px-12 items-center">
                 <div className=" text-xs py-2">
                     <Logo />
                 </div>

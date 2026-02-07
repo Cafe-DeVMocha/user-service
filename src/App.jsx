@@ -1,10 +1,17 @@
 import Header from "./components/Header";
+import Profile from "./components/Profile";
 
-function App (){
+function App() {
 
 
-  return(
-    <Header />
+  return (
+    <div>
+      <Header />
+      <Profile />
+
+    </div>
+
+
   )
 }
 
