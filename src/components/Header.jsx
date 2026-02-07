@@ -11,6 +11,12 @@ import { NavLink } from "react-router-dom";
 export default function Header() {
 
     const { user } = useUser();
+
+    const handleClick = (sectionId) => {
+        const id = `${sectionId}-section`;
+    }
+
+
     return (
 
         <div className="fixed top-0 left-0 w-full z-50 bg-blue-950 text-gray-300 ">
@@ -21,7 +27,7 @@ export default function Header() {
                 </div>
 
                 <nav className=" flex font-serif text-sm gap-5 pb-2 md:text-md lg:gap-8 sm:gap-8 ">
-                    <NavLink to="/home" className={({ isActive }) =>
+                    <NavLink  onClick={handleClick("home")} to="/home" className={({ isActive }) =>
                         isActive ?
                             "text-gray-100 font-bold scale-120 hover:scale-140 transition-trasform duration-300  animate-bounce"
                             : "text-gray-200 font-medium hover:scale-130 duration-150 "}>

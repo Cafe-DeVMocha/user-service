@@ -5,7 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 export default function LandPage() {
 
     return (
-        <div className="bg-red-950 relative min-h-screen w-screen overflow-hidden">
+        <div id="home-section" className="bg-red-950 relative min-h-screen w-screen overflow-hidden">
             <img
                 src={backgroundImg}
                 alt="Hero Background"
