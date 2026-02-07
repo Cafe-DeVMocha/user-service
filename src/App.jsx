@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import LandPage from "./components/LandPage";
 import Profile from "./components/Profile";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Header />
       <Profile />
+      <LandPage />
 
     </div>
 

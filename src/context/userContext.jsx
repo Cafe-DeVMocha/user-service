@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import profilePic from "../assets/profile.jpg"
+import profilePic from "../assets/profile2.jpg"
 
 const UserContext = createContext(undefined);
 

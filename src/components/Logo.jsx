@@ -5,6 +5,6 @@ export const Logo = ({className}) =>{
     const [logo,setLogo] = useState(logoImg);
 
     return(
-        <img src={logo} className={`w-auto h-10 sm:h-20 md:h-20 lg:h-20 ${className}`} alt="logo img" />
+        <img src={logo} className={`w-auto h-20 md:h-20 lg:h-10 ${className}`} alt="logo img" />
     );
 } 

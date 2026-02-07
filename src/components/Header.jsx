@@ -22,7 +22,7 @@ export default function Header() {
                     <Logo />
                 </div>
 
-                <nav className=" flex font-serif text-sm gap-5 pb-2 md:text-2xl lg:gap-8 sm:gap-8 ">
+                <nav className=" flex font-serif text-sm gap-5 pb-2 md:text-md lg:gap-8 sm:gap-8 ">
                     <NavLink to="/home" className={({ isActive }) =>
                         isActive ?
                             "text-gray-100 font-bold scale-120 hover:scale-140 transition-trasform duration-300  animate-bounce"
@@ -58,7 +58,7 @@ export default function Header() {
 
                 </nav>
 
-                <div className="hidden lg:flex  lg:gap-0" >
+                <div className="hidden lg:flex  lg:gap-5" >
 
                     < a href="https://web.facebook.com/"><FacebookIcon fontSize="medium" /></a>
                     < a href="https://www.linkedin.com/"><LinkedInIcon fontSize="medium" /></a>
@@ -67,7 +67,7 @@ export default function Header() {
                 </div>
 
                 <div className="hidden lg:flex">
-                    <img src={user.profilePic} className={`w-auto h-3 rounded-4xl sm:h-20 lg:h-3 lg:h-10 lg:w-15  `} alt="profile img"/>
+                    <img src={user.profilePic} className={`w-auto h-3 rounded-4xl sm:h-20 lg:h-8 lg:w-8  `} alt="profile img"/>
                 </div>
 
             </div>
