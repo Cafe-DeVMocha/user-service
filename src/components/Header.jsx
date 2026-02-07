@@ -17,13 +17,12 @@ export default function Header() {
 
         <div className=" bg-gray-900 text-gray-300">
 
-            <div className="flex items-center justify-between lg:py-3 lg:px-12  sm:py-7 sm:flex-col md:flex-row">
-                <div className="text-xs font-bold m-1">
-
-                    <Logo height="10px" width="130px" />
+            <div className="flex flex-col gap-3  lg:flex-row  lg:items-center lg:justify-between  lg:px-12 items-center">
+                <div className=" text-xs py-2">
+                    <Logo />
                 </div>
 
-                <nav className="flex sm:px-2 sm:py-2 sm:gap-3 md:gap-10 md:text-2xl font-serif">
+                <nav className=" flex font-serif text-sm gap-5 pb-2 md:text-2xl lg:gap-8 sm:gap-8 ">
                     <NavLink to="/home" className={({ isActive }) =>
                         isActive ?
                             "text-gray-100 font-bold scale-120 hover:scale-140 transition-trasform duration-300  animate-bounce"
@@ -31,7 +30,7 @@ export default function Header() {
                         Home
                     </NavLink>
 
-                   <NavLink to="/about-us" className={({ isActive }) =>
+                    <NavLink to="/about-us" className={({ isActive }) =>
                         isActive ?
                             "text-gray-100 font-bold scale-120 hover:scale-140 transition-trasform duration-300  animate-bounce"
                             : "text-gray-200 font-medium hover:scale-130 duration-150 "}>
@@ -56,21 +55,24 @@ export default function Header() {
                             : "text-gray-200 font-medium hover:scale-130 duration-150 "}>
                         Contact Us
                     </NavLink>
-                    
+
                 </nav>
 
-                <div className="hidden md:flex md:gap-4" >
+                <div className="hidden lg:flex  lg:gap-0" >
 
-                    < a href="https://web.facebook.com/"><FacebookIcon fontSize="large" /></a>
-                    < a href="https://www.linkedin.com/"><LinkedInIcon fontSize="large" /></a>
-                    < a href="https://www.instagram.com/"><InstagramIcon fontSize="large" /></a>
-                    < a href="https://x.com/"><TwitterIcon fontSize="large" /></a>
+                    < a href="https://web.facebook.com/"><FacebookIcon fontSize="medium" /></a>
+                    < a href="https://www.linkedin.com/"><LinkedInIcon fontSize="medium" /></a>
+                    < a href="https://www.instagram.com/"><InstagramIcon fontSize="medium" /></a>
+                    < a href="https://x.com/"><TwitterIcon fontSize="medium" /></a>
                 </div>
 
-                <div className="sm:px-10 md:block">
-                    <p>{user.name}</p>
+                <div className="hidden lg:flex">
+                    <img src={user.profilePic} className={`w-auto h-3 rounded-4xl sm:h-20 lg:h-3 lg:h-10 lg:w-15  `} alt="profile img"/>
                 </div>
+
             </div>
+
+
 
         </div>
     )
