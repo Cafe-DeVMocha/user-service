@@ -1,11 +1,10 @@
 import backgroundImg from "../assets/background1.jpg"
-import ReactTypingEffect from 'react-typing-effect';
 import { Typewriter } from "react-simple-typewriter";
 
 export default function LandPage() {
 
     return (
-        <div id="home-section" className="bg-red-950 relative min-h-screen w-screen overflow-hidden">
+        <div id="home-section" className="bg-red-950 min-h-screen w-screen overflow-hidden">
             <img
                 src={backgroundImg}
                 alt="Hero Background"
@@ -19,7 +18,7 @@ export default function LandPage() {
                     <div className="flex flex-col lg:gap-20">
                         <div className=" flex flex-col text-white lg:gap-1">
                             <h1 className="lg:text-8xl font-bold shadow-2xl">Where Every Bite,</h1>
-                            <h1 className="lg:text-8xl font-bold shadow-2xl">Matter</h1>
+                            <h1  className="lg:text-8xl font-bold shadow-2xl">Matter</h1>
 
                             <div className=" relative lg:mr-30 lg:mt-5 italic tracking-widest lg:text-xl font-mono text-white h-[30px] overflow-hidden">
                                 <Typewriter

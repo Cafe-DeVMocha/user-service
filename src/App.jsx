@@ -1,3 +1,4 @@
+import ElementSection from "./components/ElementSection";
 import Header from "./components/Header";
 import LandPage from "./components/LandPage";
 import Profile from "./components/Profile";
@@ -10,6 +11,9 @@ function App() {
       <Header />
       <Profile />
       <LandPage />
+      <ElementSection />
+      
+      
 
     </div>
 

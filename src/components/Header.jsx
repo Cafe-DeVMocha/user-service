@@ -14,6 +14,14 @@ export default function Header() {
 
     const handleClick = (sectionId) => {
         const id = `${sectionId}-section`;
+        const element = document.getElementById(id);
+
+        if(element){
+            element.scrollIntoView({
+                behavior:"smooth",
+                block:"start"
+            });
+        }
     }
 
 
@@ -27,33 +35,32 @@ export default function Header() {
                 </div>
 
                 <nav className=" flex font-serif text-sm gap-5 pb-2 md:text-md lg:gap-8 sm:gap-8 ">
-                    <NavLink  onClick={handleClick("home")} to="/home" className={({ isActive }) =>
+                    <NavLink  onClick={() =>handleClick("home")} to="/home" className={({ isActive }) =>
                         isActive ?
                             "text-gray-100 font-bold scale-120 hover:scale-140 transition-trasform duration-300  animate-bounce"
                             : "text-gray-200 font-medium hover:scale-130 duration-150 "}>
                         Home
                     </NavLink>
-
-                    <NavLink to="/about-us" className={({ isActive }) =>
+                    <NavLink to="/about-us" onClick={() =>handleClick("about-us")} className={({ isActive }) =>
                         isActive ?
                             "text-gray-100 font-bold scale-120 hover:scale-140 transition-trasform duration-300  animate-bounce"
                             : "text-gray-200 font-medium hover:scale-130 duration-150 "}>
                         About Us
                     </NavLink>
 
-                    <NavLink to="/menu" className={({ isActive }) =>
+                    <NavLink to="/menu" onClick={() =>handleClick("menu")} className={({ isActive }) =>
                         isActive ?
                             "text-gray-100 font-bold scale-120 hover:scale-140 transition-trasform duration-300  animate-bounce"
                             : "text-gray-200 font-medium hover:scale-130 duration-150 "}>
                         Menu
                     </NavLink>
-                    <NavLink to="/orders" className={({ isActive }) =>
+                    <NavLink to="/orders" onClick={() =>handleClick("orders")} className={({ isActive }) =>
                         isActive ?
                             "text-gray-100 font-bold scale-120 hover:scale-140 transition-trasform duration-300  animate-bounce"
                             : "text-gray-200 font-medium hover:scale-130 duration-150 "}>
                         Orders
                     </NavLink>
-                    <NavLink to="/contact-us" className={({ isActive }) =>
+                    <NavLink to="/contact-us" onClick={() =>handleClick("contact-us")} className={({ isActive }) =>
                         isActive ?
                             "text-gray-100 font-bold scale-120 hover:scale-140 transition-trasform duration-300  animate-bounce"
                             : "text-gray-200 font-medium hover:scale-130 duration-150 "}>
