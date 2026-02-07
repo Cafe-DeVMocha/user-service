@@ -10,12 +10,10 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
 
-
-
     const { user } = useUser();
     return (
 
-        <div className=" bg-blue-950 text-gray-300">
+        <div className="fixed top-0 left-0 w-full z-50 bg-blue-950 text-gray-300 ">
 
             <div className="flex flex-col gap-3 bg-gray-900 lg:flex-row  lg:items-center lg:justify-between  lg:px-12 items-center">
                 <div className=" text-xs py-2">

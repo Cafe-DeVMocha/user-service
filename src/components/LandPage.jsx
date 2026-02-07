@@ -9,7 +9,7 @@ export default function LandPage() {
             <img
                 src={backgroundImg}
                 alt="Hero Background"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover opacity-80"
             />
 
             <div className="relative z-10 flex flex-row justify-between items-center ">
@@ -21,7 +21,7 @@ export default function LandPage() {
                             <h1 className="lg:text-8xl font-bold shadow-2xl">Where Every Bite,</h1>
                             <h1 className="lg:text-8xl font-bold shadow-2xl">Matter</h1>
 
-                            <div className=" lg:mr-30 lg:mt-2 lg:mb-1 italic tracking-widest lg:text-md font-mono text-white">
+                            <div className=" relative lg:mr-30 lg:mt-5 italic tracking-widest lg:text-xl font-mono text-white h-[30px] overflow-hidden">
                                 <Typewriter
                                     words={[
                                         "Experience a dining journey that celebrates flavor, sparks curiosity, and leaves every visit unforgettable."
@@ -37,15 +37,15 @@ export default function LandPage() {
                                 </Typewriter>
                             </div>
 
-                            <div className=" lg:mr-130  lg:mt-2 lg:mb-1 italic tracking-widest lg:text-md text-whit">
+                            <div className="relative h-[140px] lg:pr-130 lg:pt-10 italic tracking-widest lg:text-md text-white">
                                 <Typewriter
                                     words={[
                                         "Step into a world where culinary artistry meets innovation. At DeVMocha, every dish is thoughtfully crafted from the finest ingredients, blending vibrant flavors, fresh textures, and contemporary presentation. From colorful gourmet salads to fusion mains, decadent desserts, and handcrafted drinks, each creation is designed to delight your senses. Whether you’re savoring a perfectly balanced brunch, enjoying a coffee crafted by expert baristas, or indulging in an exquisite dinner, every bite tells a story of passion, precision, and creativity. "
                                     ]}
                                     loop={true}       // set to true if you want repeating
-                                    typeSpeed={50}
+                                    typeSpeed={30}
                                     deleteSpeed={50}
-                                    delaySpeed={2000}
+                                    delaySpeed={4000}
                                 >
                                     {({ text }) => (
                                         <p className="lg:pt-5 lg:pr-100 lg:text-xl font-mono text-white">{text}</p>
@@ -57,9 +57,8 @@ export default function LandPage() {
 
                         </div>
 
-                        <div className="flex flex-row lg:m-3 text-white lg:pb-3">
-                            <p>dfdf</p>
-                            <p>dfdf</p>
+                        <div className=" flex flex-row text-white  lg:pt-10 lg:pb-3">
+                            <button className="bg-purple-800 lg:text-xl font-light lg:p-3 rounded-xl hover:scale-105 duration-10" >SignUp</button>
                         </div>
                     </div>
 
