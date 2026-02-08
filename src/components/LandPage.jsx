@@ -1,4 +1,4 @@
-import backgroundImg from "../assets/background1.jpg"
+import backgroundImg from "../assets/background4.jpg"
 import { Typewriter } from "react-simple-typewriter";
 
 export default function LandPage() {
@@ -20,7 +20,7 @@ export default function LandPage() {
                             <h1 className="lg:text-8xl font-bold shadow-2xl">Where Every Bite,</h1>
                             <h1  className="lg:text-8xl font-bold shadow-2xl">Matter</h1>
 
-                            <div className=" relative lg:mr-30 lg:mt-5 italic tracking-widest lg:text-xl font-mono text-white h-[30px] overflow-hidden">
+                            <div className=" relative lg:mr-30 lg:mt-5 italic tracking-widest lg:text-xl font-mono text-white h-[70px] overflow-hidden">
                                 <Typewriter
                                     words={[
                                         "Experience a dining journey that celebrates flavor, sparks curiosity, and leaves every visit unforgettable."
