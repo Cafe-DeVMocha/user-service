@@ -21,7 +21,7 @@ export default function LandPage() {
         w-full
         bg-cover
         bg-center
-        bg-no-repeat active:scale-101 duration-1100
+        bg-no-repeat hover:scale-101 duration-1100
       "
             style={{ backgroundImage: `url(${backgroundImg})` }}
         >
