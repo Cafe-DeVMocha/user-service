@@ -1,6 +1,9 @@
+
+import AboutUs from "./pages/AboutUs";
 import ElementSection from "./components/ElementSection";
 import Header from "./components/Header";
-import LandPage from "./components/LandPage";
+import LandPage from "./pages/LandPage";
+import Menu from "./pages/Menu";
 import Profile from "./components/Profile";
 import { Route, Routes } from "react-router-dom";
 
@@ -10,7 +13,7 @@ function HomePage(){
       <Header />
       <Profile />
       <LandPage />
-      <ElementSection />
+      <Menu />
     </div>
   )
 }

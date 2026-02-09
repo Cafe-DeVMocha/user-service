@@ -21,7 +21,7 @@ export default function LandPage() {
         w-full
         bg-cover
         bg-center
-        bg-no-repeat 
+        bg-no-repeat active:scale-101 duration-1100
       "
             style={{ backgroundImage: `url(${backgroundImg})` }}
         >
@@ -72,8 +72,8 @@ export default function LandPage() {
                         </div>
 
                         <div className=" flex flex-row relative text-white md:justify-between lg:pt-10 lg:pb-10 pt-20 sm:pb-10">
-                            <button className="bg-purple-800 lg:text-xl font-normal md:p-4 p-3 md:w-md w-[150px] rounded-xl hover:scale-105 duration-10 hover:border-b-violet-300 hover:font-bold 
-                            active:scale-100 hover:shadow-inner" onClick={handleClick}>SignUp</button>
+                            <button className="bg-purple-900 lg:text-xl font-normal md:p-4 p-3 md:w-md w-[150px] rounded-xl hover:scale-105 duration-200 hover:border-b-violet-300 hover:font-bold 
+                            active:scale-100 active:bg-purple-800 hover:shadow-inner" onClick={handleClick}>SignUp</button>
                         </div>
                     </div>
 
