@@ -6,7 +6,7 @@ export default function MenuCard({imgUrl, title, description}){
 
     return(
         <div id="menu-card" className="w-full max-w-md mx-auto hover:scale-102 hover:duration-1100 transition-shadow ">
-            <div className="flex flex-col p-4 sm:p-6 lg:p-8 bg-gray-200 rounded-2xl shadow-md ">
+            <div className="flex flex-col p-4 sm:p-6 lg:p-8 bg-gray-100 rounded-2xl shadow-md ">
                 <div className="w-full">
                     <img src={imgUrl} className="w-full aspect-square object-cover rounded-2xl"/>
                 </div>
