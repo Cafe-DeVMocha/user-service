@@ -1,4 +1,60 @@
 import MenuCard from "../components/MenuCard";
+import sanwidtch from "../assets/sanwidtch.jpg"
+
+const menuItems = [
+    {
+        url:sanwidtch,
+        title: "Sandwiches & Wraps",
+        description:`Freshly prepared and generously filled, our sandwiches and wraps are the 
+                    perfect blend of convenience and flavor. Built with quality bread, seasoned 
+                    proteins, crisp vegetables, and house sauces, they deliver satisfying taste 
+                    without the wait. Grilled, toasted, or freshly wrapped — each option is designed 
+                    for quick meals, productive breaks, and on-the-go energy.`
+    },
+    {
+        url:sanwidtch,
+        title: "Sandwiches & Wraps",
+        description:`Freshly prepared and generously filled, our sandwiches and wraps are the 
+                    perfect blend of convenience and flavor. Built with quality bread, seasoned 
+                    proteins, crisp vegetables, and house sauces, they deliver satisfying taste 
+                    without the wait. Grilled, toasted, or freshly wrapped — each option is designed 
+                    for quick meals, productive breaks, and on-the-go energy.`
+    },
+    {
+        url:sanwidtch,
+        title: "Sandwiches & Wraps",
+        description:`Freshly prepared and generously filled, our sandwiches and wraps are the 
+                    perfect blend of convenience and flavor. Built with quality bread, seasoned 
+                    proteins, crisp vegetables, and house sauces, they deliver satisfying taste 
+                    without the wait. Grilled, toasted, or freshly wrapped — each option is designed 
+                    for quick meals, productive breaks, and on-the-go energy.`
+    },{
+        url:sanwidtch,
+        title: "Sandwiches & Wraps",
+        description:`Freshly prepared and generously filled, our sandwiches and wraps are the 
+                    perfect blend of convenience and flavor. Built with quality bread, seasoned 
+                    proteins, crisp vegetables, and house sauces, they deliver satisfying taste 
+                    without the wait. Grilled, toasted, or freshly wrapped — each option is designed 
+                    for quick meals, productive breaks, and on-the-go energy.`
+    },{
+        url:sanwidtch,
+        title: "Sandwiches & Wraps",
+        description:`Freshly prepared and generously filled, our sandwiches and wraps are the 
+                    perfect blend of convenience and flavor. Built with quality bread, seasoned 
+                    proteins, crisp vegetables, and house sauces, they deliver satisfying taste 
+                    without the wait. Grilled, toasted, or freshly wrapped — each option is designed 
+                    for quick meals, productive breaks, and on-the-go energy.`
+    },
+    {
+        url:sanwidtch,
+        title: "Sandwiches & Wraps",
+        description:`Freshly prepared and generously filled, our sandwiches and wraps are the 
+                    perfect blend of convenience and flavor. Built with quality bread, seasoned 
+                    proteins, crisp vegetables, and house sauces, they deliver satisfying taste 
+                    without the wait. Grilled, toasted, or freshly wrapped — each option is designed 
+                    for quick meals, productive breaks, and on-the-go energy.`
+    }
+]
 
 
 export default function Menu () {
@@ -11,11 +67,18 @@ export default function Menu () {
                 </div>
 
                 <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 flex-1 m-4 gap-2 gap-y-8">
-                    <MenuCard />
-                    <MenuCard />
-                    <MenuCard />
-                    <MenuCard />
-                    <MenuCard />
+                    {
+                        menuItems.map((item,index) => {
+                            return(
+                                <MenuCard key={index}
+                                imgUrl={item.url}
+                                title={item.title}
+                                description={item.description}
+                                 />
+                            )
+                        })
+                    }
+                    
                 </div>
             </div>
         </div>
