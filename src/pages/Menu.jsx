@@ -9,12 +9,13 @@ import drinks from "../assets/drinks.jpg"
 const menuItems = [
     {
         url:sanwidtch,
-        title: "Sandwiches & Wraps",
+        title: "Sandwiches",
         description:`Freshly prepared and generously filled, our sandwiches and wraps are the 
                     perfect blend of convenience and flavor. Built with quality bread, seasoned 
                     proteins, crisp vegetables, and house sauces, they deliver satisfying taste 
                     without the wait. Grilled, toasted, or freshly wrapped — each option is designed 
-                    for quick meals, productive breaks, and on-the-go energy.`
+                    for quick meals, productive breaks, and on-the-go energy.`,
+        pageUrl: "/signup"
     },
     {
         url:pizza,
@@ -66,14 +67,14 @@ const menuItems = [
 
 export default function Menu () {
     return(
-        <div id="menu-section">
+        <div id="menu-section" className="bg-white">
             <div className="flex flex-col">
                 <div className="flex justify-center ">
-                    <text className="p-2 mt-10 lg:text-5xl  text-xl tracking-widest font-mono text-gray-50 border-amber-50 bg-red-800">DevMocha</text>
-                    <text className="p-2 mt-10 lg:text-5xl text-xl tracking-wide font-mono">Delights</text>
+                    <p className="p-2 mt-10 lg:text-5xl  text-xl tracking-widest font-mono text-gray-50 border-amber-50 bg-red-800">DevMocha</p>
+                    <p className="p-2 mt-10 lg:text-5xl text-xl tracking-wide font-mono">Delights</p>
                 </div>
 
-                <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 flex-1 m-4 gap-2 gap-y-8">
+                <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 flex-1 m-4 gap-8 gap-y-8">
                     {
                         menuItems.map((item,index) => {
                             return(
@@ -81,6 +82,7 @@ export default function Menu () {
                                 imgUrl={item.url}
                                 title={item.title}
                                 description={item.description}
+                                pageUrl={item.pageUrl}
                                  />
                             )
                         })
