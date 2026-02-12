@@ -4,12 +4,13 @@ import { easeIn, easeInOut, motion } from "framer-motion"
 
 export default function AboutUs() {
     return (
-        <div className="min-h-screen flex bg-rose-900 shadow-2xl items-center justify-center" id="about-us-section">
+        <div className="min-h-screen flex bg-pink-900 shadow-2xl items-center justify-center" id="about-us-section">
             <div className="grid grid-cols-2 bg-gray-100 lg:w-full lg:m-3 rounded-xl shadow-2xl">
                 <motion.div className="lg:scale-150" >
                     <DotLottieReact
                         src="https://lottie.host/07cd7086-1119-417d-aed1-d9677c7e68b8/EEfZ45zxwQ.lottie"
                         loop
+                        speed={0.70}
                         autoplay
                     />
 
