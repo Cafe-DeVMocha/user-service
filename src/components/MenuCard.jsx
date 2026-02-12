@@ -16,12 +16,12 @@ export default function MenuCard({ imgUrl, title, description, pageUrl }) {
     return (
         <motion.div id="menu-card" className="w-full  max-w-md mx-auto hover:scale-102 duration-200"
             initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 2, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.1 }}
             animate={{ y: [0, -10, 0] }}
             transition={{
                 y: {
-                    duration: 5,
+                    duration: 2,
                     repeat: Infinity,
                     ease: "easeInOut"
                 },
