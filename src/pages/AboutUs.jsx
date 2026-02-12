@@ -4,8 +4,8 @@ import { easeIn, easeInOut, motion } from "framer-motion"
 
 export default function AboutUs() {
     return (
-        <div className="min-h-screen flex bg-gray-100 items-center justify-center" id="about-us-section">
-            <div className="grid grid-cols-2 bg-gray-200 w-full rounded-xl shadow-2xl">
+        <div className="min-h-screen flex bg-rose-900 shadow-2xl items-center justify-center" id="about-us-section">
+            <div className="grid grid-cols-2 bg-gray-100 lg:w-full lg:m-3 rounded-xl shadow-2xl">
                 <motion.div className="lg:scale-150" >
                     <DotLottieReact
                         src="https://lottie.host/07cd7086-1119-417d-aed1-d9677c7e68b8/EEfZ45zxwQ.lottie"
@@ -57,7 +57,7 @@ export default function AboutUs() {
                     whileInView={{opacity:1,y:100}}
                     viewport={{once:false, amount:0.1}}
                     transition={{duration:0.8,ease:"easeOut"}}>
-                        <p className="text-3xl text-center font-serif font-semibold tracking-widest text-gray-700 ">
+                        <p className="text-3xl text-center font-serif font-semibold tracking-widest text-white ">
 
                             Code. Create. Caffeinate.
                         </p>
