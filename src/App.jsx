@@ -14,6 +14,7 @@ function HomePage(){
       <Profile />
       <LandPage />
       <Menu />
+      <AboutUs />
     </div>
   )
 }

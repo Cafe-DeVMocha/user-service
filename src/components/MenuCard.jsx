@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import sanwidtch from "../assets/sanwidtch.jpg"
 import { useState } from "react";
-import {easeIn, motion} from "framer-motion"
+import {easeIn, easeInOut, motion} from "framer-motion"
 
 
 export default function MenuCard({ imgUrl, title, description, pageUrl }) {
@@ -15,12 +15,12 @@ export default function MenuCard({ imgUrl, title, description, pageUrl }) {
 
     return (
         <motion.div id="menu-card" className="w-full max-w-md mx-auto hover:scale-102 duration-200"
-            initial={{opacity: 0,y:50}}
-            whileInView={{opacity:1 ,y:0}}
+            initial={{opacity: 0,y:40}}
+            whileInView={{opacity:2 ,y:0}}
             viewport={{once:false, amount:0.1}}
-            transition={{duration:0.5, ease:easeIn}}
+            transition={{duration:0.3, ease:easeInOut}}
         >
-            <div className="flex flex-col p-4 sm:p-6 lg:p-8 bg-gray-100 rounded-2xl shadow-md ">
+            <div className="flex flex-col p-4 sm:p-6 lg:p-8 bg-gray-50 rounded-2xl shadow-md ">
                 <div className="w-full">
                     <img src={imgUrl} className="w-full aspect-square object-cover rounded-2xl" />
                 </div>

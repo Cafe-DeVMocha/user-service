@@ -67,8 +67,8 @@ const menuItems = [
 
 export default function Menu () {
     return(
-        <div id="menu-section" className="bg-white">
-            <div className="flex flex-col">
+        <div id="menu-section" className="bg-white ">
+            <div className="flex flex-col pb-10">
                 <div className="flex justify-center ">
                     <p className="p-2 mt-10 lg:text-5xl  text-xl tracking-widest font-mono text-gray-50 border-amber-50 bg-red-800">DevMocha</p>
                     <p className="p-2 mt-10 lg:text-5xl text-xl tracking-wide font-mono">Delights</p>
