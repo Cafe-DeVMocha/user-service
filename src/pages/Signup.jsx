@@ -1,5 +1,6 @@
 import { Alert } from "@mui/material";
 import { useState } from "react"
+import coverImg from "../assets/aboutus2.jpg"
 
 
 export default function SignUp() {
@@ -36,10 +37,13 @@ export default function SignUp() {
 
     return (
 
-        <div >
-            <div className=" min-h-screen flex justify-center  bg-linear-to-br from-purple-500 via-pink-500 to-blue-500" >
+        <div className="overflow-hidden min-h-screen relative">
+
+            <img src= {coverImg}  className="absolute top-0 left-0 w-full h-full bg-cover  z-0 blur-md" />
+
+            <div className=" min-h-screen flex justify-center z-10 bg-linear-to-br from-purple-500 via-pink-500 to-blue-500" >
     
-                <div className="flex flex-col justify-center   items-center text-black bg-gray-100 shadow-2xl rounded-2xl m-5 hover:scale-102 duration-600">
+                <div className="flex flex-col justify-center z-20 items-center text-black bg-gray-100 opacity-90 shadow-2xl rounded-2xl m-5 hover:scale-102 duration-600">
 
                     <p className="text-4xl font-semibold  font-serif tracking-widest">Signing Up</p>
                     <form className="flex p-10 flex-col gap-2 items-center justify-center" onSubmit={handleSubmit}>
