@@ -17,7 +17,7 @@ export default function LandPage() {
             id="home-section"
             className="
         relative
-        min-h-screen
+        min-auto
         w-full
         bg-cover
         bg-center
@@ -26,7 +26,7 @@ export default function LandPage() {
             style={{ backgroundImage: `url(${backgroundImg})` }}
         >
 
-            <div className="relative z-10 flex flex-row justify-between items-center bg-red-900/10 ">
+            <div className="relative z-10 flex flex-row justify-between  items-center bg-red-900/10 ">
 
                 <div className="flex lg:pt-30 lg:pl-20 sm:pt-60 pt-40 pl-2">
 

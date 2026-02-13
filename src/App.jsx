@@ -6,25 +6,30 @@ import LandPage from "./pages/LandPage";
 import Menu from "./pages/Menu";
 import Profile from "./components/Profile";
 import { Route, Routes } from "react-router-dom";
+import SignUp from "./pages/Signup.jsx";
 
-function HomePage(){
-  return(
+function HomePage() {
+  return (
     <div>
+      
       <Header />
       <Profile />
       <LandPage />
       <Menu />
       <AboutUs />
+
+
     </div>
   )
 }
 
-function App(){
+function App() {
 
-  return(
+  return (
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </>
   )
