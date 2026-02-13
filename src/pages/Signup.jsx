@@ -68,7 +68,7 @@ export default function SignUp() {
                         </div>
 
                         <div className="">
-                            <button className=" text-gray-100 p-3 bg-green-600 rounded-xl hover:bg-green-500 duration-200" type="submit">Submit</button>
+                            <button className=" text-gray-100 p-3 bg-green-600 rounded-xl hover:bg-green-500 duration-200 active:scale-95" type="submit">Submit</button>
                         </div>
                     </form>
 
