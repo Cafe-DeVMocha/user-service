@@ -30,6 +30,8 @@ export default function SignUp() {
             alert("Password does not match!");
             return;
         }
+
+        alert('form submitted');
     }
 
     return (
@@ -37,7 +39,7 @@ export default function SignUp() {
         <div >
             <div className=" min-h-screen flex justify-center  bg-linear-to-br from-purple-500 via-pink-500 to-blue-500" >
     
-                <div className="flex flex-col justify-center  items-center text-black bg-gray-100 shadow-2xl rounded-2xl m-5 hover:scale-102 duration-600">
+                <div className="flex flex-col justify-center   items-center text-black bg-gray-100 shadow-2xl rounded-2xl m-5 hover:scale-102 duration-600">
 
                     <p className="text-4xl font-semibold  font-serif tracking-widest">Signing Up</p>
                     <form className="flex p-10 flex-col gap-2 items-center justify-center" onSubmit={handleSubmit}>
