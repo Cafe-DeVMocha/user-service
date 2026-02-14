@@ -41,16 +41,19 @@ export default function SignUp() {
 
             <div className="grid grid-cols-2 min-h-screen bg-linear-to-br from-gray-900 via-gray-900 to-gray-950" >
 
-
+                
                 <div className="text-white">
-                    <img src ={coverImg}  className="overflow-hidden min-w-screen h-screen blur-md" />
+                    
+                    <img src ={coverImg}  className="overflow-hidden min-w-screen bg-cover bg-center h-screen blur-md" />
+                    
+                
                 </div>
 
                 <div className="flex flex-col justify-center text-white  items-center  bg-linear-to-br from-gray-800 via-gray-900 to-gray-950 opacity-90 shadow-2xl rounded-2xl m-5 ">
 
                     <p className="text-4xl font-semibold font-sans tracking-wide">Create an account</p>
 
-                    <p className="text-md font-normal font-sans tracking-wide">Already have an account? <span className="underline-offset-1 underline text-blue-700">Log In</span></p>
+                    <p className="text-md font-normal font-sans tracking-wide">Already have an account? <span className="underline-offset-1 underline text-blue-400">Log In</span></p>
 
                     <form className="flex p-10 flex-col gap-2 items-center justify-center" onSubmit={handleSubmit}>
 
