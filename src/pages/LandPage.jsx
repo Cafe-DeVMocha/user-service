@@ -25,6 +25,7 @@ export default function LandPage() {
       "
             style={{ backgroundImage: `url(${backgroundImg})` }}
         >
+            
 
             <div className="relative z-10 flex flex-row justify-between  items-center bg-red-900/10 ">
 
