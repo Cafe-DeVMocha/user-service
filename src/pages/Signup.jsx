@@ -1,6 +1,6 @@
 import { Alert } from "@mui/material";
 import { useState } from "react"
-import coverImg from "../assets/aboutus3.jpg"
+import coverImg from "../assets/signup.jpg"
 
 
 export default function SignUp() {
@@ -53,7 +53,7 @@ export default function SignUp() {
                     <div className="flex flex-col gap-4 ">
                         <p className="text-7xl">Create Your <br /> Free Account </p>
 
-                        <p className="text-2xl text-gray-200">Grab your offers on time, Share with your firends</p>
+                        <p className="text-2xl text-gray-200 opacity-85">Grab your offers on time, Share with your firends</p>
 
                     </div>
                 </div>

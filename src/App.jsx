@@ -7,6 +7,7 @@ import Menu from "./pages/Menu";
 import Profile from "./components/Profile";
 import { Route, Routes } from "react-router-dom";
 import SignUp from "./pages/Signup.jsx";
+import ContactUs from "./pages/ContactUs.jsx";
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
       <LandPage />
       <Menu />
       <AboutUs />
+      <ContactUs />
 
 
     </div>
