@@ -8,7 +8,7 @@ export default function ContactUs() {
         <div id="contact-us-section">
             <div className="bg-linear-to-br from-gray-950 via-gray-900 to-gray-950">
 
-                <div className="grid grid-cols-[1fr_1fr]">
+                <div className="lg:grid lg:grid-cols-[1fr_1fr] flex flex-col">
                     <div className="flex flex-col text-white gap-30 pt-40">
                         <div className="flex flex-col gap-5 mx-10 lg:max-w-xl">
                             <p className="lg:text-7xl text-xl">Contact Us</p>
@@ -46,18 +46,45 @@ export default function ContactUs() {
                     </div>
 
 
-                    <div className="flex">
+                    <div className="flex my-auto mx-auto">
                         <div className="flex">
-                            <form className="text-white flex flex-col">
 
-                                <div className="flex flex-row">
-                                    <label>Name</label>
-                                    <input type="text" />
+                            <form className='bg-gray-200 pt-100 h-screen'>
+                                <div className="text-black flex flex-col gap-10 m-5">
+
+                                    <div className="flex flex-row gap-25">
+                                        <div className="flex flex-col">
+                                            <label>Name</label>
+                                            <input type="text" />
+                                        </div>
+
+                                        <div className="flex flex-col">
+                                            <label>Name</label>
+                                            <input type="text" />
+                                        </div>
+
+                                        <div className="flex flex-col">
+                                            <label>Name</label>
+                                            <input type="text" />
+                                        </div>
+
+                                    </div>
+
+                                    <div className="flex flex-row gap-25 ">
+                                        <div className="flex flex-col">
+                                            <label>Name</label>
+                                            <input className='w-auto' type="text" />
+                                        </div>
+
+
+
+                                    </div>
+
+
+
                                 </div>
-
-
-
                             </form>
+
                         </div>
                     </div>
 
