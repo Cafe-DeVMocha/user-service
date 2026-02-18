@@ -11,7 +11,7 @@ export default function ContactUs() {
                 <div className="lg:grid lg:grid-cols-[1fr_1fr] flex flex-col">
                     <div className="flex flex-col text-white gap-30 pt-40">
                         <div className="flex flex-col gap-5 mx-10 lg:max-w-xl">
-                            <p className="lg:text-7xl text-xl">Contact Us</p>
+                            <p className="lg:text-7xl text-3xl">Contact Us</p>
                             <p className="text-xs lg:text-xl font-light">We’d love to hear from you! Whether you have questions, feedback, or need support,
                                 our team is here to help. Reach out to us using the form below, email, or phone, and
                                 we’ll get back to you as soon as possible. Your message matters! </p>
@@ -27,53 +27,53 @@ export default function ContactUs() {
 
                         </div>
 
-                        <div className="flex flex-row mx-10 gap-3">
+                        <div className="flex flex-row mx-10 gap-3 p-3">
                             <div className="flex flex-col gap-3 max-w-xs mx-auto">
                                 <p>Customer Support</p>
-                                <p>Quick responses and reliable assistance whenever you reach out.</p>
+                                <p className='text-md font-light opacity-75'>Quick responses and reliable assistance whenever you reach out.</p>
                             </div>
 
                             <div className="flex flex-col gap-3 max-w-xs mx-auto">
                                 <p>Technical Support</p>
-                                <p>Specialized help for bugs, errors, and system issues.</p>
+                                <p className='text-md font-light opacity-75'>Specialized help for bugs, errors, and system issues.</p>
                             </div>
 
                             <div className="flex flex-col gap-3 max-w-xs mx-auto">
                                 <p>General Inquiries</p>
-                                <p>Questions, collaborations, or feedback — we’re happy to hear from you.</p>
+                                <p className='text-md font-light opacity-75'> Questions, collaborations, or feedback — we’re happy to hear from you.</p>
                             </div>
                         </div>
                     </div>
 
 
-                    <div className="flex my-auto mx-auto">
-                        <div className="flex">
+                    <div className="flex my-auto mx-auto bg-gray-200 ">
+                        <div className="flex items-center justify-center pt-100">
 
-                            <form className='bg-gray-200 pt-100 h-screen'>
-                                <div className="text-black flex flex-col gap-10 m-5">
+                            <form className=' h-screen'>
+                                <div className="text-black flex flex-col gap-10 m-5 bg-amber-300 ">
 
                                     <div className="flex flex-row gap-25">
                                         <div className="flex flex-col">
-                                            <label>Name</label>
-                                            <input type="text" />
+                                            <label className='text-xl font-normal font-mono'>First Name</label>
+                                            <input className='m-1  py-2 px-3 outline-2 outline-gray-500 hover:outline-gray-400 duration-200 rounded-md' type="text" />
                                         </div>
 
                                         <div className="flex flex-col">
-                                            <label>Name</label>
-                                            <input type="text" />
+                                            <label className='text-xl font-normal font-mono'>Last Name</label>
+                                            <input className='m-1  py-2 px-3 outline-2 outline-gray-500 hover:outline-gray-400 duration-200 rounded-md' type="text" />
                                         </div>
 
                                         <div className="flex flex-col">
-                                            <label>Name</label>
-                                            <input type="text" />
+                                            <label className='text-xl font-normal font-mono'>Email</label>
+                                            <input className='m-1  py-2 px-3 outline-2 outline-gray-500 hover:outline-gray-400 duration-200 rounded-md' type="text" />
                                         </div>
 
                                     </div>
 
                                     <div className="flex flex-row gap-25 ">
                                         <div className="flex flex-col">
-                                            <label>Name</label>
-                                            <input className='w-auto' type="text" />
+                                            <label className='text-xl font-normal font-mono'>Message</label>
+                                            <input className='m-1  py-2 px-3 outline-2 outline-gray-500 hover:outline-gray-400 duration-200 rounded-md' type="text" />
                                         </div>
 
 
