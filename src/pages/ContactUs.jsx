@@ -1,7 +1,32 @@
 import CallIcon from '@mui/icons-material/Call';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { form } from 'framer-motion/client';
+import { useState } from 'react';
 
 export default function ContactUs() {
+
+    const [formData, setFormData] = useState({
+        firstName: "",
+        firstName: "",
+        email: "",
+        message: ""
+    });
+
+    function handleChange(e) {
+
+
+        setFormData((prev) => ({
+            ...prev,
+            [e.target.name]: e.target.value
+        }));
+
+    };
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(formData);
+        alert("Form submitted!");
+    }
 
     return (
 
@@ -47,37 +72,45 @@ export default function ContactUs() {
 
 
                     <div className="flex my-auto mx-auto bg-gray-200 ">
-                        <div className="flex items-center justify-center pt-100">
+                        <div className="flex items-center justify-center ">
 
-                            <form className=' h-screen'>
-                                <div className="text-black flex flex-col gap-10 m-5 bg-amber-300 ">
+                            <form className='h-auto bg-gray-100 ' onSubmit={handleSubmit}>
+                                <div className="text-black flex flex-col gap-10 m-5 ">
 
                                     <div className="flex flex-row gap-25">
                                         <div className="flex flex-col">
-                                            <label className='text-xl font-normal font-mono'>First Name</label>
-                                            <input className='m-1  py-2 px-3 outline-2 outline-gray-500 hover:outline-gray-400 duration-200 rounded-md' type="text" />
+                                            <label className='text-xl font-normal font-sans opacity-80' htmlFor='firstName'>First Name</label>
+                                            <input className='m-1  py-2 px-3 outline-1 outline-gray-500 hover:outline-gray-400 duration-150 rounded-md active:scale-105' 
+                                             type="text" id='firstName' name='firstName' required value={formData.firstName} onChange={handleChange} />
                                         </div>
 
                                         <div className="flex flex-col">
-                                            <label className='text-xl font-normal font-mono'>Last Name</label>
-                                            <input className='m-1  py-2 px-3 outline-2 outline-gray-500 hover:outline-gray-400 duration-200 rounded-md' type="text" />
+                                            <label className='text-xl font-normal font-sans opacity-80' htmlFor='lastName'>Last Name</label>
+                                            <input className='m-1  py-2 px-3 outline-1 outline-gray-500 hover:outline-gray-400 duration-150 rounded-md active:scale-105' type="text" 
+                                           name='lastName' id='lastName' required value={formData.lastName} onChange={handleChange}/>
                                         </div>
 
                                         <div className="flex flex-col">
-                                            <label className='text-xl font-normal font-mono'>Email</label>
-                                            <input className='m-1  py-2 px-3 outline-2 outline-gray-500 hover:outline-gray-400 duration-200 rounded-md' type="text" />
+                                            <label className='text-xl font-normal font-sans opacity-80' htmlFor='email'>Email</label>
+                                            <input className='m-1  py-2 px-3 outline-1 outline-gray-500 hover:outline-gray-400 duration-150 rounded-md active:scale-105' type="email"
+                                           name='email' id='email' required value={formData.email} onChange={handleChange} />
                                         </div>
 
                                     </div>
 
                                     <div className="flex flex-row gap-25 ">
-                                        <div className="flex flex-col">
-                                            <label className='text-xl font-normal font-mono'>Message</label>
-                                            <input className='m-1  py-2 px-3 outline-2 outline-gray-500 hover:outline-gray-400 duration-200 rounded-md' type="text" />
+                                        <div className="flex flex-col w-full ">
+                                            <label className='text-xl font-normal font-sans opacity-80' htmlFor='message'>Message</label>
+                                            <textarea className='m-1  py-2 px-3 outline-1 outline-gray-500 hover:outline-gray-400 duration-150 rounded-md active:scale-105
+                                            w-full min-h-50' id='message' required type="text" name='message'  value={formData.message} onChange={handleChange}/>
                                         </div>
+                                    </div>
 
-
-
+                                    <div className='flex items-center justify-center'>
+                                        <button className='bg-green-500 py-1 px-3 text-xl font-medium text-white 
+                                        hover:bg-green-600 hover:scale-105 duration-150 active:scale-95 hover:font-normal'>
+                                            Submit
+                                        </button>
                                     </div>
 
 
