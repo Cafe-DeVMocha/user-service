@@ -30,7 +30,7 @@ export default function ContactUs() {
 
     return (
 
-        <div id="contact-us-section">
+        <div id="contact-us-section" >
             <div className="bg-linear-to-br from-gray-950 via-gray-900 to-gray-950">
 
                 <div className="lg:grid lg:grid-cols-[1fr_1fr] flex flex-col">
@@ -71,7 +71,11 @@ export default function ContactUs() {
                     </div>
 
 
-                    <div className="flex my-auto mx-auto bg-gray-200 ">
+                    <div className="flex flex-col  mx-auto bg-gray-100">
+                        <div className='flex my-auto justify-center'>
+                            <p className='font-medium text-3xl font-serif text-center tracking-wider'>Feel free to talk with us</p>
+                        </div>
+                        
                         <div className="flex items-center justify-center ">
 
                             <form className='h-auto bg-gray-100 ' onSubmit={handleSubmit}>
@@ -79,19 +83,19 @@ export default function ContactUs() {
 
                                     <div className="flex flex-row gap-25">
                                         <div className="flex flex-col">
-                                            <label className='text-xl font-normal font-sans opacity-80' htmlFor='firstName'>First Name</label>
+                                            <label className='text-md font-normal font-sans opacity-80' htmlFor='firstName'>First Name</label>
                                             <input className='m-1  py-2 px-3 outline-1 outline-gray-500 hover:outline-gray-400 duration-150 rounded-md active:scale-105' 
                                              type="text" id='firstName' name='firstName' required value={formData.firstName} onChange={handleChange} />
                                         </div>
 
                                         <div className="flex flex-col">
-                                            <label className='text-xl font-normal font-sans opacity-80' htmlFor='lastName'>Last Name</label>
+                                            <label className='text-md font-normal font-sans opacity-80' htmlFor='lastName'>Last Name</label>
                                             <input className='m-1  py-2 px-3 outline-1 outline-gray-500 hover:outline-gray-400 duration-150 rounded-md active:scale-105' type="text" 
                                            name='lastName' id='lastName' required value={formData.lastName} onChange={handleChange}/>
                                         </div>
 
                                         <div className="flex flex-col">
-                                            <label className='text-xl font-normal font-sans opacity-80' htmlFor='email'>Email</label>
+                                            <label className='text-md font-normal font-sans opacity-80' htmlFor='email'>Email</label>
                                             <input className='m-1  py-2 px-3 outline-1 outline-gray-500 hover:outline-gray-400 duration-150 rounded-md active:scale-105' type="email"
                                            name='email' id='email' required value={formData.email} onChange={handleChange} />
                                         </div>
@@ -100,7 +104,7 @@ export default function ContactUs() {
 
                                     <div className="flex flex-row gap-25 ">
                                         <div className="flex flex-col w-full ">
-                                            <label className='text-xl font-normal font-sans opacity-80' htmlFor='message'>Message</label>
+                                            <label className='text-md font-normal font-sans opacity-80' htmlFor='message'>Message</label>
                                             <textarea className='m-1  py-2 px-3 outline-1 outline-gray-500 hover:outline-gray-400 duration-150 rounded-md active:scale-105
                                             w-full min-h-50' id='message' required type="text" name='message'  value={formData.message} onChange={handleChange}/>
                                         </div>
