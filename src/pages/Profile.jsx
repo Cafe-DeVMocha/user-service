@@ -14,9 +14,9 @@ export default function Profile() {
             <div className="flex">
                 <ProfileNav />
             </div>
-            <div className="flex flex-col py-10">
+            <div className="flex flex-col py-10 flex-1">
 
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center w-full px-4">
                     <div className="flex flex-col px-5">
                         <p className="text-2xl font-medium font-mono">Welcome, {user.name}</p>
                         <p className="text-black"> {now.getDate()} {month} {now.getFullYear()} </p>
