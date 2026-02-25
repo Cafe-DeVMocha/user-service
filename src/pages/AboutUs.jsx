@@ -63,13 +63,12 @@ export default function AboutUs() {
 
                             More than a café, <b>DevMocha</b> is a community hub — where technology meets taste, and conversations turn into creations.
 
-                            Code. Create. Caffeinate.
                         </p>
                     </motion.div>
 
                     <motion.div
                         initial={{ opacity: 0, y: 170 }}
-                        whileInView={{ opacity: 1, y: 100 }}
+                        whileInView={{ opacity: 1, y: 60 }}
                         viewport={{ once: false, amount: 0.1 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}>
                         <p className="text-xl md:text-3xl pt-5 text-center font-serif font-semibold tracking-widest text-gray-100 lg:text-gray-800 ">

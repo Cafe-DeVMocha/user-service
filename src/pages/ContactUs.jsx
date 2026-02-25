@@ -7,7 +7,7 @@ export default function ContactUs() {
 
     const [formData, setFormData] = useState({
         firstName: "",
-        firstName: "",
+        lastName: "",
         email: "",
         message: ""
     });
@@ -33,8 +33,8 @@ export default function ContactUs() {
         <div id="contact-us-section" >
             <div className="bg-linear-to-br from-gray-950 via-gray-900 to-gray-950">
 
-                <div className="lg:grid lg:grid-cols-[1fr_1fr] flex flex-col">
-                    <div className="flex flex-col text-white gap-30 pt-40">
+                <div className="lg:grid lg:grid-cols-[1fr_1fr] sm:grid sm:grid-cols-[2fr_1fr] flex flex-col">
+                    <div className="flex flex-col text-white lg:gap-30 gap-10 pt-40">
                         <div className="flex flex-col gap-5 mx-10 lg:max-w-xl">
                             <p className="lg:text-7xl text-3xl">Contact Us</p>
                             <p className="text-xs lg:text-xl font-light">We’d love to hear from you! Whether you have questions, feedback, or need support,
@@ -71,9 +71,9 @@ export default function ContactUs() {
                     </div>
 
 
-                    <div className="flex flex-col  mx-auto bg-gray-100">
-                        <div className='flex my-auto justify-center'>
-                            <p className='font-medium text-3xl font-serif text-center tracking-wider'>Feel free to talk with us</p>
+                    <div className="flex flex-col  bg-gray-100">
+                        <div className='flex lg:my-auto my-20 items-center justify-center'>
+                            <p className='font-medium md:text-3xl text-2xl  font-serif text-center tracking-wider'>Feel free to talk with us</p>
                         </div>
                         
                         <div className="flex items-center justify-center ">
@@ -81,7 +81,7 @@ export default function ContactUs() {
                             <form className='h-auto bg-gray-100 ' onSubmit={handleSubmit}>
                                 <div className="text-black flex flex-col gap-10 m-5 ">
 
-                                    <div className="flex flex-row gap-25">
+                                    <div className="flex md:flex-row flex-col gap-5  md:gap-25">
                                         <div className="flex flex-col">
                                             <label className='text-md font-normal font-sans opacity-80' htmlFor='firstName'>First Name</label>
                                             <input className='m-1  py-2 px-3 outline-1 outline-gray-500 hover:outline-gray-400 duration-150 rounded-md active:scale-105' 
@@ -111,7 +111,7 @@ export default function ContactUs() {
                                     </div>
 
                                     <div className='flex items-center justify-center'>
-                                        <button className='bg-green-500 py-1 px-3 text-xl font-medium text-white 
+                                        <button className='bg-green-500 py-1 shadow-2xl rounded-md px-3 text-xl font-medium text-white 
                                         hover:bg-green-600 hover:scale-105 duration-150 active:scale-95 hover:font-normal'>
                                             Submit
                                         </button>
