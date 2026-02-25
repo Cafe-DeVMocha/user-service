@@ -5,31 +5,40 @@ import { useUser } from "../context/userContext"
 export default function Profile() {
 
     const { user } = useUser();
+    const now = new Date();
+    const month = now.toLocaleString('default', { month: 'long' });
 
     return (
         <div className="flex">
 
-            <div className="">
+            <div className="flex">
                 <ProfileNav />
             </div>
-            <div className="grid grid-cols-[1fr_1fr] ">
+            <div className="flex flex-col py-10">
 
+                <div className="flex justify-between items-center">
+                    <div className="flex flex-col px-5">
+                        <p className="text-2xl font-medium font-mono">Welcome, {user.name}</p>
+                        <p className="text-black"> {now.getDate()} {month} {now.getFullYear()} </p>
+                    </div>
 
-                <div className="bg-blue-950 flex flex-col shadow-2xl min-h-screen">
-                    <div className="items-center justify-center mx-auto my-20 ">
+                    <div className="flex gap-4 items-center">
+                        <input type="text" id="search" className="border bg-gray-50 opacity-70 h-8 w-50"/>
                         <div>
-                            <img src={user.profilePic} className="h-50 w-50 rounded-full object-cover shadow-2xl" />
+                            <img src={user.profilePic} className="w-10 h-10 object-cover rounded-full"/>
                         </div>
-
-                        <p className="text-center py-5 text-gray-100 text-2xl font-serif font-light">{user.name}</p>
-
                     </div>
                 </div>
 
-
                 <div>
-                    <p>Settings</p>
+
                 </div>
+
+
+              
+
+
+                
             </div>
         </div>
     )
