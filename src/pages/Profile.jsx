@@ -53,8 +53,8 @@ export default function Profile() {
                             </div>
                         </div>
                         <div>
-                            <button className="bg-blue-700 text-white py-2 px-6 rounded-md font-medium
-                            hover:bg-blue-600 hover:scale-105 hover:font-medium duration-150 active:bg-black active:font-medium active:scale-95"> Edit</button>
+                            <button className="bg-blue-700 text-white py-2 px-6 rounded-md font-medium 
+                            hover:bg-blue-600 hover:scale-105 hover:font-medium duration-150 active:bg-black active:font-medium active:scale-95"> EDIT</button>
                         </div>
                     </div>
                 </div>
