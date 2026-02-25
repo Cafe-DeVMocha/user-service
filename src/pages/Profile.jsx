@@ -7,11 +7,13 @@ export default function Profile() {
     const { user } = useUser();
 
     return (
-        <div>
-            <div className="grid grid-cols-[0.1fr_0.8fr_1fr] ">
-                <div>
-                    <ProfileNav />
-                </div>
+        <div className="flex">
+
+            <div className="">
+                <ProfileNav />
+            </div>
+            <div className="grid grid-cols-[1fr_1fr] ">
+
 
                 <div className="bg-blue-950 flex flex-col shadow-2xl min-h-screen">
                     <div className="items-center justify-center mx-auto my-20 ">
