@@ -16,9 +16,9 @@ export default function Profile() {
             <div className="flex">
                 <ProfileNav />
             </div>
-            <div className="flex flex-col py-10 flex-1">
+            <div className="flex flex-col py-10 flex-1  ">
 
-                <div className="flex justify-between items-center w-full px-4">
+                <div className="flex justify-between items-center w-full px-4 ">
                     <div className="flex flex-col px-5">
                         <p className="text-2xl font-medium font-mono">Welcome, {user.name}</p>
                         <p className="text-black"> {now.getDate()} {month} {now.getFullYear()} </p>
@@ -36,12 +36,12 @@ export default function Profile() {
                     </div>
                 </div>
 
-                <div className="flex flex-col my-25 mx-5">
+                <div className="flex flex-col my-25 mx-5 bg-gray-50 shadow-md rounded-md">
                     <div className="">
 
                     </div>
 
-                    <div className="flex justify-between items-center mx-5">
+                    <div className="flex justify-between my-5 items-center mx-5">
                         <div className="flex gap-5">
                             <div>
                                 <img src={user.profilePic} className="w-30 h-30 object-cover rounded-full" />
@@ -54,7 +54,7 @@ export default function Profile() {
                         </div>
                         <div>
                             <button className="bg-blue-700 text-white py-2 px-6 rounded-md font-medium 
-                            hover:bg-blue-600 hover:scale-105 hover:font-medium duration-150 active:bg-black active:font-medium active:scale-95"> Edit </button>
+                            hover:bg-blue-600 hover:scale-105 hover:font-medium duration-100 active:bg-black active:font-medium active:scale-95"> Edit </button>
                         </div>
                     </div>
                 </div>
