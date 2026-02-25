@@ -8,6 +8,7 @@ import Profile from "./components/Profile";
 import { Route, Routes } from "react-router-dom";
 import SignUp from "./pages/Signup.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
+import ProfilePage from "./pages/Profile.jsx";
 
 function HomePage() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/profileHome" element ={<ProfilePage/>} />
       </Routes>
     </>
   )
