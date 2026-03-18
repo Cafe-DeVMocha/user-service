@@ -1,5 +1,26 @@
+import { useState } from "react"
 
 export default function Login() {
+
+    const [formData, setFormData] = useState({
+        username: "",
+        password: ""
+    })
+
+    const handleSubmit = () => {
+
+    }
+    
+   
+    const handleChange = (e) => {
+        setFormData((prev)=>({
+            ...prev,
+            [e.target.name] : e.target.value
+        }
+        ))
+    }
+
+
     return (
         <div>
 
@@ -15,18 +36,18 @@ export default function Login() {
                     </div>
 
                     <div className="flex flex-col">
-                        <form className="flex flex-col gap-9">
+                        <form className="flex flex-col gap-9" onSubmit={handleSubmit}>
                             <div className="flex flex-col gap-4">
                                 <div className="flex flex-col">
                                     <label className="px-8 tracking-widest" htmlFor="username">Username</label>
-                                    <input className="px-8 lg:w-xl border  py-2 outline-gray-700 rounded-4xl
+                                    <input value={formData.username} onChange={handleChange} className="px-8 lg:w-xl border  py-2 outline-gray-700 rounded-4xl
                                 hover:scale-102 duration-200 " placeholder="useranme" type="text" name="username" required />
                                 </div>
 
                                 <div className="flex flex-col">
                                     <label className="px-8 tracking-widest" htmlFor="username">Password</label>
-                                    <input className="px-8 lg:w-xl border  py-2 outline-gray-700 rounded-4xl
-                                hover:scale-102 duration-200 " placeholder="useranme" type="text" name="username" required />
+                                    <input value={formData.password} onChange={handleChange} className="px-8 lg:w-xl border  py-2 outline-gray-700 rounded-4xl
+                                hover:scale-102 duration-200 " placeholder="useranme" type="password" name="password" required />
                                 </div>
                             </div>
 
