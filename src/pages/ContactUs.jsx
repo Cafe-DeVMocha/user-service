@@ -111,7 +111,7 @@ export default function ContactUs() {
                                     </div>
 
                                     <div className='flex items-center justify-center'>
-                                        <button className='bg-green-500 py-1 shadow-2xl rounded-md px-3 text-xl font-medium text-white 
+                                        <button className='bg-green-500 py-1 shadow-2xl rounded-md px-3 text-md font-medium text-white 
                                         hover:bg-green-600 hover:scale-105 duration-150 active:scale-95 hover:font-normal'>
                                             Submit
                                         </button>

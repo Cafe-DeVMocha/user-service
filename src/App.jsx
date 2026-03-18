@@ -9,6 +9,7 @@ import { Route, Routes } from "react-router-dom";
 import SignUp from "./pages/Signup.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import ProfilePage from "./pages/Profile.jsx";
+import Login from "./pages/Login.jsx";
 
 function HomePage() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/profileHome" element ={<ProfilePage/>} />
+        <Route path="/login" element = {<Login/>}/>
       </Routes>
     </>
   )
